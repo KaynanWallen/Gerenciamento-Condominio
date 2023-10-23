@@ -5,3 +5,27 @@ $body-bg: #f8fafc;
 $font-family-sans-serif: 'Nunito', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
+$preto: #452B34;
+$vermelho: #C90A00;
+$laranja: #E68A2E;
+$creme: #DED6C9;
+
+$bs-input: #88D1CA;
+
+$theme-colors: (
+    "preto": $preto,
+    "laranja" : $laranja,
+    "vermelho" : $vermelho,
+    "creme": $creme,
+    "input": $bs-input
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
