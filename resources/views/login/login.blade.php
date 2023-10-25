@@ -54,6 +54,7 @@
                     <p class="text-preto fs-6">
                         Não tem uma conta? <a class="fw-bold text-preto" href="{{ url('/register') }}">cadastrar-se</a>
                     </p>
+                    
                 </div>
             </section>
         </div> 

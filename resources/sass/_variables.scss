@@ -12,13 +12,15 @@ $laranja: #E68A2E;
 $creme: #DED6C9;
 
 $bs-input: #88D1CA;
+$success: #28A745;
 
 $theme-colors: (
     "preto": $preto,
     "laranja" : $laranja,
     "vermelho" : $vermelho,
     "creme": $creme,
-    "input": $bs-input
+    "input": $bs-input,
+    "success": $success
 );
 
 $grid-breakpoints: (
