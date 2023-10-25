@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\User\RegisterController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -81,22 +81,9 @@ Route::get('/reservar/quadra', function () {
 
 // Pagina Auth
 
-Route::get('/login', function () {
-    return view('login.login');
-});
-
-Route::get('/register', function () {
-    return view('login.register');
-});
-
-Route::post('/register', [RegisterController::class, 'create']);
-
-
-
-
-
-
-
+Route::get('/login', [AuthController::class, 'index']);
+Route::get('/login/register', [AuthController::class, 'create']);
+Route::post('/login/register', [AuthController::class, 'store']);
 
 
 
