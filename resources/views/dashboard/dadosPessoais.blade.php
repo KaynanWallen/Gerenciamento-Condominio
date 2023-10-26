@@ -18,7 +18,7 @@
         </div> -->
 
         <div class="d-flex flex-column ">
-            <label class="fs-4 text-input fw-semibold">Nome Completo</label>
+            <label class="fs-4 text-input fw-semibold">Nome</label>
             <input type="text"  class="nome bg-transparent input-form text-creme fs-4 p-2" style="border: 1px solid #88D1CA;height:45px" placeholder="Nome Completo"/>
         </div>
 

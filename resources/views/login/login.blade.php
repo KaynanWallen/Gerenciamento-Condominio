@@ -8,7 +8,7 @@
     <img src="{{ asset('img/logoluxury.png') }}" style="width:300px">
 
 
-    <div class="d-flex flex-row w-auto" style="height:600px">
+    <form class="d-flex flex-row w-auto" style="height:600px" method="POST" action="{{ route('logar') }}">
         
         <div class="bg-creme h-100 p-2 card justify-content-between align-items-center ">
             <section class="w-100 d-flex justify-content-end ">
@@ -40,14 +40,14 @@
             <section class="w-100 d-flex justify-content-center align-items-center">
                 <div class="w-75  d-flex flex-column  align-items-center gap-3">
     
-                    <input class=" fs-3 bg-input w-100" type="text" style="height:45px"/>
-                    <input class=" fs-3 bg-input w-100" type="text" style="height:45px"/>
+                    <input class=" fs-3 bg-input w-100" type="email" style="height:45px" name="email"/>
+                    <input class=" fs-3 bg-input w-100" type="password" style="height:45px" name="password"/>
         
                     <p class="text-preto fs-6 mb-0">
                         <a>Esqueceu sua senha?</a>
                     </p>
         
-                    <button class="w-100 btn btn-preto text-input fw-bold fs-3 d-flex justify-content-center align-items-center" style="height:45px">
+                    <button type="submit" class="w-100 btn btn-preto text-input fw-bold fs-3 d-flex justify-content-center align-items-center" style="height:45px">
                         Entrar
                     </button>
         
@@ -59,7 +59,7 @@
             </section>
         </div> 
 
-    </div>
+    </form>
 
 </main>
 

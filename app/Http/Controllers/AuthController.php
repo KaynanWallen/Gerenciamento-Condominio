@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class AuthController extends Controller
@@ -20,6 +22,31 @@ class AuthController extends Controller
     public function index()
     {
         return view('login.login');
+    }
+
+    public function confirmarLogin(Request $request){
+        $credenciais = $request -> validate([
+            'email' => ['required', 'email'],
+            'password' => ['required']
+        ], [
+            'email.required' => 'O campo email é obrigatório',
+            'email.email' => 'O email não é válido',
+            'password.required' => 'O campo senha é obrigatório'
+        ]);
+
+        if(Auth::attempt($credenciais)){
+            $request -> session()->regenerate();
+            return redirect() -> intended('/dashboard');
+        }else {
+            return redirect() -> back() -> with('erro', 'Email ou senha inválido');
+        }
+    }
+
+    public function logout(Request $request){
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/login');
     }
 
     /**

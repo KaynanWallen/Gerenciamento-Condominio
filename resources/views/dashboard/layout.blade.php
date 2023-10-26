@@ -1,3 +1,8 @@
+
+
+
+{{-- {{auth() -> user() -> nome}} --}}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,28 +59,28 @@
 
                     <section class="mt-2 ms-2 d-flex flex-column">
                         <div class="hover d-flex flex-row gap-2" style="height:25px" role='button'>
-                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/chave') }}">
+                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/dashboard/chave') }}">
                                 <img src="{{ asset('img/chave.png') }}" style="height:25px">
                                 <p class="fw-semibold fs-5">Minha Chave</p>          
                             </a>
                         </div>
 
                         <div class="hover d-flex flex-row gap-2" style="height:25px" role='button' >
-                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/avisos') }}">
+                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/dashboard/avisos') }}">
                                 <img src="{{ asset('img/avisos.png') }}" style="height:25px">
                                 <p class="fw-semibold fs-5">Avisos</p>
                             </a>
                         </div>
 
                         <div class="hover d-flex flex-row gap-2" style="height:25px" role='button'>
-                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/multas') }}">
+                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/dashboard/multas') }}">
                                 <img src="{{ asset('img/multa.png') }}" style="height:25px">
                                 <p class="fw-semibold fs-5">Multas</p>
                             </a>
                         </div>
 
                         <div class="hover d-flex flex-row gap-2" style="height:25px" role='button'>
-                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/reclamações') }}">
+                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/dashboard/reclamações') }}">
                                 <img src="{{ asset('img/reclamacao.png') }}" style="height:25px">
                                 <p class="fw-semibold fs-5">Reclamações</p>
                             </a>
@@ -83,7 +88,7 @@
 
                         
                         <div class="hover d-flex flex-row gap-2" style="height:25px" role='button'>
-                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/dados') }}">
+                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/dashboard/dados') }}">
                                 <img src="{{ asset('img/dados.png') }}" style="height:25px">
                                 <p class="fw-semibold fs-5">Dados Pessoais</p>
                             </a>
@@ -101,28 +106,28 @@
 
                     <section class="mt-2 ms-2 d-flex flex-column">
                         <div class="hover d-flex flex-row gap-2" style="height:25px" role='button'>
-                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/moradores') }}">
+                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/dashboard/moradores') }}">
                                 <img src="{{ asset('img/moradores.png') }}" style="height:25px">
                                 <p class="fw-semibold fs-5">Moradores</p>
                             </a>
                         </div>
 
                         <div class="hover d-flex flex-row gap-2" style="height:25px" role='button'>
-                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/visitantes') }}">
+                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/dashboard/visitantes') }}">
                                 <img src="{{ asset('img/frequente.png') }}" style="height:25px">
                                 <p class="fw-semibold fs-5">Visitantes Frequentes</p>
                             </a>
                         </div>
 
                         <div class="hover d-flex flex-row gap-2" style="height:25px" role='button'>
-                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/veiculos') }}">
+                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/dashboard/veiculos') }}">
                                 <img src="{{ asset('img/veiculo.png') }}" style="height:25px">
                                 <p class="fw-semibold fs-5">Veiculos</p>
                             </a>
                         </div>
 
                         <div class="hover d-flex flex-row gap-2" style="height:25px" role='button'>
-                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/pets') }}">
+                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/dashboard/pets') }}">
                                 <img src="{{ asset('img/pets.png') }}" style="height:25px">
                                 <p class="fw-semibold fs-5">Pets</p>
                             </a>
@@ -141,14 +146,14 @@
 
                     <section class="mt-2 ms-2 d-flex flex-column">
                         <div class="hover d-flex flex-row gap-2" style="height:25px" role='button'>
-                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/reservar/salao') }}">
+                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/dashboard/reservar/salao') }}">
                                 <img src="{{ asset('img/festa.png') }}" style="height:25px">
                                 <p class="fw-semibold fs-5">Salão de Festas</p>
                             </a>
                         </div>
 
                         <div class="hover d-flex flex-row gap-2" style="height:25px" role='button'>
-                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/reservar/quadra') }}">
+                            <a class="d-flex flex-row gap-2 h-100 text-preto" href="{{ url('/dashboard/reservar/quadra') }}">
                                 <img src="{{ asset('img/quadra.png') }}" style="height:25px">
                                 <p class="fw-semibold fs-5">Quadra</p>
                             </a>
